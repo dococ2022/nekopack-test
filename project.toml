@@ -1,0 +1,20 @@
+[[build.buildpacks]]
+uri = "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz"
+
+[[build.buildpacks]]
+uri = "https://github.com/heroku/heroku-buildpack-google-chrome"
+
+[[build.buildpacks]]
+uri = "https://github.com/heroku/heroku-buildpack-chromedriver"
+
+[[build.buildpacks]]
+uri = "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+
+[[build.buildpacks]]
+uri = "https://github.com/heroku/heroku-buildpack-apt.git"
+
+[[build.buildpacks]]
+uri = "https://github.com/chrismytton/heroku-buildpack-jq"
+
+[[build.buildpacks]]
+uri = "heroku/python"

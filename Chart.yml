@@ -1,0 +1,3 @@
+apiVersion: "catuserbot-3"
+name: "catuserbot"
+version: v2

@@ -1,7 +1,7 @@
 services:
     worker:
         build: .
-    postgresql:
-        image: "postgres:latest"
-        ports:
-          - 5432:5432
+    deploy:
+        restart_policy:
+            condition: on-failure
+            max_attempts: 3

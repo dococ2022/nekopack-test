@@ -2,4 +2,4 @@ services:
     worker:
         build: .
         environment:
-            ENV: "ANYTHING"
+            ENV: $ENV

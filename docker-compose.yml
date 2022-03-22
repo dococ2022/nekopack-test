@@ -1,3 +1,5 @@
 services:
     worker:
         build: .
+    postgresql:
+        image: postgresql

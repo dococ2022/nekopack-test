@@ -1,3 +1,5 @@
 services:
     worker:
         build: .
+        environment:
+            ENV: "ANYTHING"

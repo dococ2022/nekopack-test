@@ -2,4 +2,6 @@ services:
     worker:
         build: .
     postgresql:
-        image: PostgreSQL
+        image: "postgres:latest"
+        ports:
+          - 5432:5432

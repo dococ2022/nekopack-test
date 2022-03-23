@@ -1,6 +1,9 @@
 services:
     worker:
         build: .
+        deploy:
+            restart_policy:
+                max_attempts: 2
         environment:
             ALIVE_NAME: $ALIVE_NAME
             APP_ID: $APP_ID

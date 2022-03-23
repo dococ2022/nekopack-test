@@ -10,3 +10,4 @@ services:
             ENV: $ENV
             STRING_SESSION: $STRING_SESSION
             TG_BOT_TOKEN: $TG_BOT_TOKEN
+        env_file: config.env

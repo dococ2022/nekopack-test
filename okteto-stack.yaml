@@ -9,4 +9,4 @@ services:
             DATABASE_URL: $DATABASE_URL
             ENV: $ENV
             STRING_SESSION: $STRING_SESSION
-            TG_BOT_TOKE: $TG_BOT_TOKEN
+            TG_BOT_TOKEN: $TG_BOT_TOKEN

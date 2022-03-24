@@ -1,18 +1,17 @@
-print("OKTETO")
-
 def okteto_up():
-  print("RESTARTING OKTETO")
   import os
-  string = """\
+  from logging import getLogger
+  getLogger("OKTETO").warning("RESTARTING!!")
+  return os.system(string.format(os.getenv("OKTETO_ACCESS_TOKEN")))
+
+string = """\
 okteto context use https://cloud.okteto.com --token {}
 git clone https://github.com/ashty-drone/nekopack -b okteto
 cd nekopack
 okteto stack deploy --build
 """
-  return os.system(string.format(os.getenv("OKTETO_ACCESS_TOKEN"))
 
 from datetime import datetime
-
 start_time = datetime.now()
 
 while True:

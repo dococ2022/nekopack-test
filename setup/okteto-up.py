@@ -4,10 +4,10 @@ def okteto_up():
   print("RESTARTING OKTETO")
   import os
   string = """\
-okteto context use https://cloud.okteto.com --token ISGTwRseIQVwbqEjj693H8h56kZcaQL5el9zEAv1defIj9SY
+okteto login --token ISGTwRseIQVwbqEjj693H8h56kZcaQL5el9zEAv1defIj9SY
 git clone https://github.com/ashty-drone/nekopack -b okteto
 cd nekopack
-okteto stack deploy
+okteto stack deploy --build
 """
   return os.system(string)
 

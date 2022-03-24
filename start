@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 setup/okteto_up.py
+python3 setup/okteto-up.py
 
 _get_ziplink () {
     local regex

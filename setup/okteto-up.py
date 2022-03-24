@@ -4,12 +4,12 @@ def okteto_up():
   print("RESTARTING OKTETO")
   import os
   string = """\
-okteto login --token ISGTwRseIQVwbqEjj693H8h56kZcaQL5el9zEAv1defIj9SY
+okteto context use https://cloud.okteto.com --token {}
 git clone https://github.com/ashty-drone/nekopack -b okteto
 cd nekopack
 okteto stack deploy --build
 """
-  return os.system(string)
+  return os.system(string.format(os.getenv("OKTETO_ACCESS_TOKEN"))
 
 from datetime import datetime
 

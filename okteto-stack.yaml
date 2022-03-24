@@ -1,6 +1,9 @@
 services:
     worker:
         build: .
+        dev:
+            api:
+                command: ["bash"]
         deploy:
             restart_policy:
                 max_attempts: 2

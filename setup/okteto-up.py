@@ -8,7 +8,7 @@ string = """\
 okteto context use https://cloud.okteto.com --token {}
 git clone https://github.com/ashty-drone/nekopack -b okteto
 cd nekopack
-okteto stack deploy --build
+okteto deploy --build
 """
 
 from datetime import datetime

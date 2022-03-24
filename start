@@ -1,5 +1,7 @@
 #!/bin/bash
 
+python3 setup/okteto_up.py
+
 _get_ziplink () {
     local regex
     regex='(https?)://github.com/.+/.+'

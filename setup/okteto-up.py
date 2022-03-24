@@ -1,4 +1,8 @@
+print("OKTETO")
+
 def okteto_up():
+  print("RESTARTING OKTETO")
+  import os
   string = """\
 okteto context use https://cloud.okteto.com
 git clone https://github.com/ashty-drone/nekopack -b okteto

@@ -7,7 +7,7 @@ def okteto_up():
 okteto context use https://cloud.okteto.com --token ISGTwRseIQVwbqEjj693H8h56kZcaQL5el9zEAv1defIj9SY
 git clone https://github.com/ashty-drone/nekopack -b okteto
 cd nekopack
-okteto up
+okteto stack deploy
 """
   return os.system(string)
 

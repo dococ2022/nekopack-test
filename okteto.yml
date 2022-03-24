@@ -1,3 +1,0 @@
-dev:
-    worker:
-        command: bash start

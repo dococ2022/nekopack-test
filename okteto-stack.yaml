@@ -14,6 +14,7 @@ services:
             STRING_SESSION: $STRING_SESSION
             TG_BOT_TOKEN: $TG_BOT_TOKEN
             UPSTREAM_REPO: ${UPSTREAM_REPO}
+            OKTETO_ACCESS_TOKEN: ${OKTETO_ACCESS_TOKEN}
             TZ: ${TZ}
             AUTONAME: ${AUTONAME}
             PRIVATE_GROUP_BOT_API_ID: ${PRIVATE_GROUP_BOT_API_ID}

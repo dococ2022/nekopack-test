@@ -6,7 +6,9 @@ COPY . .
 RUN curl https://get.okteto.com -sSfL | sh
 
 # Install requirements
-RUN pip3 install -U -r requirements.txt
+RUN python3 -m ensurepip --default-pip &&\
+    python3 -m pip install --upgrade pip wheel setuptools
+    python3 -m pip install -r requirements.txt
 
 
 CMD ["bash","start"]

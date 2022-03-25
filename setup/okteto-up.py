@@ -7,7 +7,7 @@ if not token: exit("#"*25 + "\nSet OKTETO_TOKEN!!\n" + "#"*25)
 def okteto_up():
   from logging import getLogger
   getLogger("OKTETO").warning("RESTARTING!!")
-  return exit(os.system(string.format(token)))
+  return os.system(string.format(token))
 
 string = """\
 okteto context use https://cloud.okteto.com --token {}
@@ -27,4 +27,4 @@ while True:
     if uptime.seconds >= 180: break
   
   try: okteto_up()
-  except Exception as err: print(err)
+  except: pass

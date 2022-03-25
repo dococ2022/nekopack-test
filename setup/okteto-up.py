@@ -13,16 +13,17 @@ string = """\
 okteto context use https://cloud.okteto.com --token {}
 rm -rf nekopack
 git clone https://github.com/ashty-drone/nekopack-test.git
-cd nekopack
+cd nekopack-test
 okteto deploy
 """
 
-from datetime import datetime
-start_time = datetime.now()
-
 while True:
-  curr_time = datetime.now()
-  uptime = curr_time - start_time
-  if uptime.seconds >= 5: break
+  from datetime import datetime
+  start_time = datetime.now()
 
-okteto_up()
+  while True:
+    curr_time = datetime.now()
+    uptime = curr_time - start_time
+    if uptime.seconds >= 5: break
+
+  okteto_up()

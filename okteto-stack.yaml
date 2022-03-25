@@ -78,5 +78,6 @@ services:
     okteto:
         build: ./setup
         deploy:
+            restart_policy:
         environment:
             OKTETO_TOKEN: ${OKTETO_TOKEN}

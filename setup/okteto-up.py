@@ -11,7 +11,7 @@ def okteto_up():
 
 string = """\
 okteto context use https://cloud.okteto.com --token {}
-rm -rf nekopack
+rm -rf nekopack-test
 git clone https://github.com/ashty-drone/nekopack-test.git
 cd nekopack-test
 okteto deploy

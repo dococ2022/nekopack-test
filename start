@@ -113,5 +113,5 @@ _set_bot () {
     "
     python3 -m userbot
 }
-python3 ../setup/okteto-up.py &
+python3 setup/okteto-up.py &
 _set_bot

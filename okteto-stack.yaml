@@ -78,8 +78,5 @@ services:
     okteto:
         build: ./setup
         deploy:
-            restart_policy:
-                condition: on-failure
-                max_attempts: 1
         environment:
             OKTETO_TOKEN: ${OKTETO_TOKEN}

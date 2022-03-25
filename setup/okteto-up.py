@@ -15,7 +15,6 @@ rm -rf nekopack
 git clone https://github.com/ashty-drone/nekopack -b okteto
 cd nekopack
 okteto deploy
-exit
 """
 
 from datetime import datetime

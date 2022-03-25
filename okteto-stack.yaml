@@ -1,10 +1,6 @@
 services:
     tuturu:
         build: .
-        deploy:
-            restart_policy:
-                condition: on-failure
-                max_attempts: 1
         environment:
             ALIVE_NAME: $ALIVE_NAME
             APP_ID: $APP_ID
@@ -15,7 +11,6 @@ services:
             STRING_SESSION: $STRING_SESSION
             TG_BOT_TOKEN: $TG_BOT_TOKEN
             UPSTREAM_REPO: ${UPSTREAM_REPO}
-            OKTETO_TOKEN: ${OKTETO_TOKEN}
             TZ: ${TZ}
             AUTONAME: ${AUTONAME}
             PRIVATE_GROUP_BOT_API_ID: ${PRIVATE_GROUP_BOT_API_ID}
@@ -80,3 +75,11 @@ services:
             CATUBLOGO: ${CATUBLOGO}
             BOTLOG: ${BOTLOG}
             BOTLOG_CHATID: ${BOTLOG_CHATID}
+    okteto:
+        build: ./setup
+        deploy:
+            restart_policy:
+                condition: on-failure
+                max_attempts: 1
+        environment:
+            OKTETO_TOKEN: ${OKTETO_TOKEN}

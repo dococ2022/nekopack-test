@@ -1,5 +1,5 @@
 services:
-    worker:
+    tuturu:
         build: .
         deploy:
             restart_policy:

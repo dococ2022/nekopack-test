@@ -2,7 +2,7 @@ import os
 from sys import exit
 
 token = os.environ.get("OKTETO_TOKEN")
-if not token: exit("#"*10 + "\nSet OKTETO_TOKEN!!" + "#"*10)
+if not token: exit("#"*10 + "\nSet OKTETO_TOKEN!!\n" + "#"*10)
   
 def okteto_up():
   from logging import getLogger
